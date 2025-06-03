@@ -55,7 +55,7 @@ After training, the model generates text continuations using advanced decoding s
 """Вставить картинку"""
 
 
-# Russian Text Generation with Fine-Tuned GPT Model (https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/generate-ru.py)
+# Russian Text Generation with Fine-Tuned GPT Model ([GPT-by-sayori_qua/generate-ru.py](https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/generate-ru.py))
 
 This project demonstrates how to fine-tune a Russian GPT model: **IlyaGusev/rugpt3medium_sum_gazeta** on the RUwiki dataset for Russian text generation. After training, the model is capable of continuing prompts in natural and coherent Russian.
 
@@ -102,7 +102,7 @@ After training, the model generates continuations using advanced decoding strate
 
 """Вставить картинку"""
 
-# English Question Answering Model Training with FLAN-T5 (https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/qa-en.py)
+# English Question Answering Model Training with FLAN-T5 ([GPT-by-sayori_qua/qa-en.py](https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/qa-en.py))
 
 This project demonstrates how to fine-tune a question answering model using the **google/flan-t5-base model** on the **OpenAssistant/oasst1 dataset**. The model is trained to answer user questions in a natural and helpful way.
 
@@ -166,7 +166,7 @@ After training, the model generates answers using decoding strategies like:
 """Вставить картинку"""
 
 
-# Russian Question Answering System with Translation
+# Russian Question Answering System with Translation ([GPT-by-sayori_qua/qa-ru.py](https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/qa-ru.py))
 
 This project demonstrates how to build a multilingual question answering system , **where a Russian question is translated into English**, answered by an English QA model **google/flan-t5-base**, and the answer **is translated back into Russian**.
 
@@ -224,7 +224,7 @@ The flow looks like this:
 
 "Вставить картинку вопрос-ответ"
 
-# Multilingual Text Generation with Fine-Tuned GPT Models
+# Multilingual Text Generation with Fine-Tuned GPT Models ([GPT-by-sayori_qua/generate_text_en_ru.py](https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/generate_text_en_ru.py))
 
 This project demonstrates how to use two fine-tuned GPT models for language-specific text generation :
 
@@ -270,7 +270,7 @@ Postprocessing: Ensures proper capitalization and punctuation.
 Example output:
 """Вставить картинку"""
 
-# Multilingual Question Answering System
+# Multilingual Question Answering System ([GPT-by-sayori_qua/qa_txt_voice.py](https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/qa_txt_voice.py))
 
 This project implements a multilingual question answering system that supports both English and Russian . It uses a fine-tuned **FLAN-T5** model for answering questions, and **NLLB** for cross-language translation.
 
@@ -325,7 +325,7 @@ The flow looks like this:
 **🧠 Sample Output**
 "Вставить картинку вопрос-ответ"
 
-# 🤖 Telegram QA & Text Generation Bot
+# 🤖 Telegram QA & Text Generation Bot ([GPT-by-sayori_qua/TelegramBot.py](https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/TelegramBot.py))
 This is a Telegram bot that provides two core functions using AI:
 
 - Text generation — the initial phrases (in English or in English) continue.
