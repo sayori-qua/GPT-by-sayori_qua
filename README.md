@@ -32,7 +32,7 @@ prompts_continues = [
     ...
 ]
 ```
-🏋️ Training Process
+Training Process
 Tokenizes and pre-processes data (HTML cleaning, URL removal, stopwords filtering).
 Splits data into train/test sets.
 Trains the model using Hugging Face's Trainer.
@@ -69,7 +69,7 @@ prompts_continues = [
     ...
 ]
 ```
-🏋️ Training Process
+Training Process
 The pipeline includes:
 
 Loading and preprocessing Russian texts (HTML cleaning, URL removal, punctuation handling).
@@ -119,7 +119,7 @@ prompts_qa_en = [
 ```
 You can easily extend or modify these prompts.
 
-🏋️ Training Pipeline
+Training Pipeline
 The pipeline includes:
 
 Loading and filtering the dataset.
