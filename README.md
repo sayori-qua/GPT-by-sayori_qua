@@ -101,6 +101,7 @@ The pipeline includes:
 After training, the model generates continuations using advanced decoding strategies such as **beam search, top-k sampling, and repetition penalty.**
 
 **🧠 Sample Output**
+
 ```bash
 Prompt: Она встала у окна, глядя на проходящих людей, машины, листья, которые ветер
 Generated text: Она встала у окна, глядя на проходящих людей, машины, листья, которые ветер срывал с деревьев и бросал в небо. Она не видела ничего, кроме того, что было перед ее глазами, она не замечала времени. У неё не было ни прошлого, ни будущего, только настоящее и настоящее, которое она никогда не увидит. В тот день, когда она это поняла, жизнь её изменилась, и она начала новую жизнь.
@@ -272,14 +273,23 @@ Model: fine-tuned "openai-community/gpt2"
 Postprocessing: Fixes common contractions and capitalization.
 
 **🧠 Sample Output**
-"""Вставить картинку"""
+
+```none
+Prompt: Gym is very good because
+Generated text: Gym is very good because it allows you to take your time and get things done in a short amount of time so you don t have to worry about how long it takes you.
+``` 
 
 **Russian Model**
 
 Model: IlyaGusev/rugpt3medium_sum_gazeta
-Postprocessing: Ensures proper capitalization and punctuation.
-Example output:
-"""Вставить картинку"""
+Postprocessing: Ensures proper capitalization and punctuation.'
+
+**🧠 Sample Output**
+
+```bash
+Prompt: Она встала у окна, глядя на проходящих людей, машины, листья, которые ветер
+Generated text: Она встала у окна, глядя на проходящих людей, машины, листья, которые ветер срывал с деревьев и бросал в небо. Она не видела ничего, кроме того, что было перед ее глазами, она не замечала времени. У неё не было ни прошлого, ни будущего, только настоящее и настоящее, которое она никогда не увидит. В тот день, когда она это поняла, жизнь её изменилась, и она начала новую жизнь.
+```
 
 # Multilingual Question Answering System ([GPT-by-sayori_qua/qa_txt_voice.py](https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/qa_txt_voice.py))
 
@@ -301,7 +311,8 @@ Optional (for audio processing):
 ```bash
 pip install pydub numpy scipy
 ```
-Also install ffmpeg for audio file handling:
+Also install ffmpeg for audio file handling
+
 **🌍 Supported Languages:**
 Input : English (en) or Russian (ru)
 QA Engine : Works on English questions
@@ -333,8 +344,33 @@ The flow looks like this:
 4. Generate Answer using FLAN-T5
 5. Translate Back to Russian (if needed)
 
+**English Model**
+
+Model: **google/flan-t5-base model**
+
 **🧠 Sample Output**
-"Вставить картинку вопрос-ответ"
+
+```none
+Qyestion: Can you really trust your memory?
+Answer: Actually... Sure, you can trust your memory. Here are some things to consider when evaluating a memory:
+1. The memory is based on information about the person or event that they were thinking about.
+2. The memories can vary from person to person depending on the context and context of the event.
+3. There are many different types of memories that can be compared to each other.
+```
+
+**Russian Model**
+
+Model: **google/flan-t5-base** with translator **facebook/nllb-200-distilled-600M**.
+
+**🧠 Sample Output**
+
+```none
+Question: Почему всё стало таким скучным в последнее время?
+Answer: В последнее время это скучно по многим причинам:
+1. было много работы и нужно было слишком много времени, чтобы сделать все.
+2. Мне трудно сосредоточиться на задаче, поэтому я чувствую, что не получаю достаточно времени в течение дня.
+3. Погода так холодная, что может быть трудно идти в ногу с требованиями работы.
+```
 
 # 🤖 Telegram QA & Text Generation Bot ([GPT-by-sayori_qua/TelegramBot.py](https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/TelegramBot.py))
 This is a Telegram bot that provides two core functions using AI:
@@ -370,8 +406,3 @@ Also install ffmpeg for voice processing
 3. Detects language automatically
 4. Uses QA model to generate answer
 5. Sends back response in original language
-
-**💬 Example Prompts**
-/generate
-
-/ask
