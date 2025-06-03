@@ -442,7 +442,7 @@ Also install ffmpeg for voice processing
 </center>
 
 - **/ask**
-<a href="https://postimg.cc/v1N62pY1"  target="_blank">
+<a href="https://postimg.cc/hX2xDpKh"  target="_blank">
   <img src="https://i.postimg.cc/7LkNNWc1/IMG-8484.jpg"  width="400" alt="Screenshot of /ask command" />
 </a>
 
