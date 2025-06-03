@@ -183,7 +183,7 @@ Only high-quality English QA pairs are selected based on metadata:
 - Creativity > 0.45
 Custom examples are also added to improve performance on common questions.
 
-# Russian QA System with Translation
+# Russian Question Answering System with Translation
 This project demonstrates how to build a multilingual question answering system , where a Russian question is translated into English, answered by an English QA model (google/flan-t5-base), and the answer is translated back into Russian.
 
 The full pipeline includes:
