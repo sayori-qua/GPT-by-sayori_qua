@@ -1,4 +1,3 @@
-from transformers import WhisperProcessor, WhisperForConditionalGeneration
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 from datasets import load_dataset
@@ -17,9 +16,6 @@ from transformers import NllbTokenizer
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(device)
-
-en_voice_model = WhisperForConditionalGeneration.from_pretrained("openai/whisper-small").to(device)
-en_voice_processor = WhisperProcessor.from_pretrained("openai/whisper-small")
 
 en_qa_model = AutoModelForSeq2SeqLM.from_pretrained("C:/Users/user/PycharmProjects/GPT_2MODELS/results/en_qa").to(device)
 en_qa_tokenizer = AutoTokenizer.from_pretrained("C:/Users/user/PycharmProjects/GPT_2MODELS/results/en_qa")
