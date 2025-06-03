@@ -14,7 +14,7 @@ Generate high-quality English text continuations based on input prompts.\
 Make sure you have the following installed:
 ```bash
 pip install torch transformers datasets nltk bs4 langdetect rouge sacrebleu pandas tqdm joblib tensorboard
-```bash
+
 Also, download required NLTK resources:
 ```bash
 nltk.download('punkt')
