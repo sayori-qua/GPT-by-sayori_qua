@@ -412,7 +412,7 @@ Also install ffmpeg for voice processing
 
 **🎯How does this work?**
 
-**English:**
+**English (en):**
 
 - **/generate**
 <center>
@@ -432,7 +432,7 @@ Also install ffmpeg for voice processing
 </a>
 
 
-**Russian:**
+**Russian (ru):**
 
 - **/generate**
 <center>
