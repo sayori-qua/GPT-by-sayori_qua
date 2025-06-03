@@ -52,7 +52,7 @@ This project demonstrates how to fine-tune a Russian GPT model (IlyaGusev/rugpt3
 
 🧰 Requirements
 ```bash
-pip install torch transformers datasets nltk bs4 langdetect rouge sacrebleu pandas tqdm joblib tensorboard accelerate
+pip install torch transformers datasets nltk bs4 langdetect rouge sacrebleu pandas tqdm joblib tensorboard 
 ```
 Also, download required NLTK resources:
 ```bash
@@ -92,7 +92,7 @@ This project demonstrates how to fine-tune a question answering model using the 
 🧰 Requirements
 Make sure you have all required libraries installed:
 ```bash
-pip install torch transformers datasets nltk bs4 langdetect rouge sacrebleu pandas tqdm joblib tensorboard accelerate
+pip install torch transformers datasets nltk bs4 langdetect rouge sacrebleu pandas tqdm joblib tensorboard 
 ```
 Also, download NLTK resources:
 ```bash
@@ -153,7 +153,7 @@ QA generation using a fine-tuned FLAN-T5 model
 🧰 Requirements
 Make sure you have the following libraries installed:
 ```bash
-pip install torch transformers datasets nltk langdetect accelerate
+pip install torch transformers datasets nltk langdetect
 ```
 Also, download NLTK resources:
 nltk.download('punkt')
@@ -229,3 +229,94 @@ Model: IlyaGusev/rugpt3medium_sum_gazeta
 Postprocessing: Ensures proper capitalization and punctuation.
 Example output:
 """Вставить картинку"""
+
+# Multilingual Question Answering System
+This project implements a multilingual question answering system that supports both English and Russian . It uses a fine-tuned FLAN-T5 model for answering questions, and NLLB for cross-language translation.
+🧠 Features
+Automatic language detection (Russian/English)
+Translation between languages using facebook/nllb-200-distilled-600M
+Uses a fine-tuned FLAN-T5 model (google/flan-t5-base) for question answering
+Clean response formatting with natural-sounding intros
+Ready to integrate into voice assistants or chatbots
+
+🧰 Requirements
+Make sure you have the following installed:
+```bash
+pip install torch transformers datasets langdetect
+```
+Optional (for audio processing):
+```bash
+pip install pydub numpy scipy
+```
+Also install ffmpeg for audio file handling:
+🌍 Supported Languages
+Input : English (en) or Russian (ru)
+QA Engine : Works on English questions
+Translation : English ↔ Russian
+🧪 Example Prompts
+Here are some example prompts used in testing:
+```bash
+prompts_qa_en = [
+    "Can you really trust your memory?",
+    "Is programming good for the brain?",
+    "What happens after we leave this place?",
+    "Is it true that a human created you?",
+    ...
+]
+```
+You can also ask questions in Russian:
+```bash
+"Почему всё стало таким скучным?"
+"Кто такой Достоевский?"
+```
+🔁 Translation Pipeline
+The flow looks like this:
+
+Input : Russian or English question
+Language Detection : Detects input language
+Translate to English (if needed)
+Generate Answer using FLAN-T5
+Translate Back to Russian (if needed)
+
+🧠 Sample Output
+"Вставить картинку вопрос-ответ"
+
+# 🤖 Telegram QA & Text Generation Bot
+This is a Telegram bot that provides two core functions using AI:
+
+Text generation — the initial phrases (in English or in English) continue.
+Question answering — answers text and voice questions (in either language).
+The bot uses fine-tuned models for both tasks and supports automatic language detection.
+
+🔧 Features
+✅ Multilingual support: English (en) / Russian (ru)
+✅ /generate — Generate text continuation from any prompt
+✅ /ask — Ask a question via text or voice message
+✅ Voice input recognition using Whisper
+✅ Language detection + translation under the hood
+✅ Ready to deploy with your own Hugging Face models
+
+🧰 Requirements
+Install dependencies:
+```bash
+pip install python-telegram-bot pydub numpy torch transformers datasets nltk
+```
+Also install ffmpeg for voice processing
+
+🌍 Supported Commands
+/start – Welcome message
+/help – Show help
+/generate – Start text generation mode
+/ask – Ask a question (text or voice)
+
+🗣️ Voice Message Flow
+User sends voice message
+Bot converts audio to text using Whisper
+Detects language automatically
+Uses QA model to generate answer
+Sends back response in original language
+
+💬 Example Prompts
+/generate
+
+/ask
