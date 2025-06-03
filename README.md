@@ -165,7 +165,7 @@ After training, the model generates answers using decoding strategies like:
 - Repetition penalty
 
 **🧠 Sample Output**
-```bash
+```none
 Qyestion: Can you really trust your memory?
 Answer: Actually... Sure, you can trust your memory. Here are some things to consider when evaluating a memory:
 1. The memory is based on information about the person or event that they were thinking about.
@@ -228,7 +228,7 @@ The flow looks like this:
 5. Translate Back to Russian : Final response in native language.
 
 **🧠 Sample Output**
-```bash
+```none
 Question: Почему всё стало таким скучным в последнее время?
 Answer: В последнее время это скучно по многим причинам:
 1. было много работы и нужно было слишком много времени, чтобы сделать все.
