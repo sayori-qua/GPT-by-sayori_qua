@@ -52,8 +52,10 @@ prompts_continues = [
 After training, the model generates text continuations using advanced decoding strategies like **beam search, top-k sampling, and repetition penalty.**
 
 **🧠 Sample Output**
-"""Вставить картинку"""
-
+```bash
+Prompt: Gym is very good because
+Generated text: Gym is very good because it allows you to take your time and get things done in a short amount of time so you don t have to worry about how long it takes you.
+```
 
 # Russian Text Generation with Fine-Tuned GPT Model ([GPT-by-sayori_qua/generate-ru.py](https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/generate-ru.py))
 
@@ -99,9 +101,10 @@ The pipeline includes:
 After training, the model generates continuations using advanced decoding strategies such as **beam search, top-k sampling, and repetition penalty.**
 
 **🧠 Sample Output**
-
-"""Вставить картинку"""
-
+```bash
+Prompt: Она встала у окна, глядя на проходящих людей, машины, листья, которые ветер
+Generated text: Она встала у окна, глядя на проходящих людей, машины, листья, которые ветер срывал с деревьев и бросал в небо. Она не видела ничего, кроме того, что было перед ее глазами, она не замечала
+```
 # English Question Answering Model Training with FLAN-T5 ([GPT-by-sayori_qua/qa-en.py](https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/qa-en.py))
 
 This project demonstrates how to fine-tune a question answering model using the **google/flan-t5-base model** on the **OpenAssistant/oasst1 dataset**. The model is trained to answer user questions in a natural and helpful way.
