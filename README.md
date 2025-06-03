@@ -123,19 +123,19 @@ You can easily extend or modify these prompts.
 Training Pipeline
 The pipeline includes:
 
-Loading and filtering the dataset.
-Preprocessing text (HTML cleaning, URL removal).
-Selecting only high-quality English QA pairs.
-Tokenizing input/output texts.
-Training the T5 model using Hugging Face's Trainer.
-Saving the best checkpoint locally.
+1. Loading and filtering the dataset.
+2. Preprocessing text (HTML cleaning, URL removal).
+3. Selecting only high-quality English QA pairs.
+4. Tokenizing input/output texts.
+5. Training the T5 model using Hugging Face's Trainer.
+6. Saving the best checkpoint locally.
 
 🧠 Text Generation
 After training, the model generates answers using decoding strategies like:
 
-Beam search
-Top-p and Top-k sampling
-Repetition penalty
+- Beam search
+- Top-p and Top-k sampling
+- Repetition penalty
 
 Example output:
 """Вставить картинку"""
@@ -145,9 +145,9 @@ This project demonstrates how to build a multilingual question answering system 
 
 The full pipeline includes:
 
-Language detection
-Text translation using facebook/nllb-200-distilled-600M
-QA generation using a fine-tuned FLAN-T5 model
+1. Language detection
+2. Text translation using facebook/nllb-200-distilled-600M
+3. QA generation using a fine-tuned FLAN-T5 model
 
 🧰 Requirements
 Make sure you have the following libraries installed:
@@ -155,10 +155,11 @@ Make sure you have the following libraries installed:
 pip install torch transformers datasets nltk langdetect
 ```
 Also, download NLTK resources:
+```bash
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
-
+```
 🌍 Supported Languages
 ranslation is powered by NLLB-200 tokenizer. You can see all supported languages via:
 ```bash
@@ -181,11 +182,11 @@ prompts_qa_ru = [
 🔁 Translation Pipeline
 The flow looks like this:
 
-Input : Russian question.
-Language Detection : Detects if input is in Russian or English.
-Translate to English : Using NLLB model.
-Generate Answer : Using fine-tuned English QA model.
-Translate Back to Russian : Final response in native language.
+1. Input : Russian question.
+2. Language Detection : Detects if input is in Russian or English.
+3. Translate to English : Using NLLB model.
+4. Generate Answer : Using fine-tuned English QA model.
+5. Translate Back to Russian : Final response in native language.
 
 🧠 Sample Output
 "Вставить картинку вопрос-ответ"
@@ -193,8 +194,8 @@ Translate Back to Russian : Final response in native language.
 # Multilingual Text Generation with Fine-Tuned GPT Models
 This project demonstrates how to use two fine-tuned GPT models for language-specific text generation :
 
-English model trained on OpenWebText and BookCorpus.
-Russian model trained on RUwiki.
+- English model trained on OpenWebText and BookCorpus.
+- Russian model trained on RUwiki.
 The system automatically detects the input language and uses the appropriate model to generate natural-sounding continuations.
 
 🧰 Requirements
@@ -210,8 +211,8 @@ The system uses langdetect + custom keyword rules to determine the input languag
 
 Supported languages:
 
-Russian (ru)
-English (en)
+- Russian (ru)
+- English (en)
 Custom keywords ensure better accuracy in cases where language detection fails.
 
 🧠 Text Generation
@@ -232,11 +233,11 @@ Example output:
 # Multilingual Question Answering System
 This project implements a multilingual question answering system that supports both English and Russian . It uses a fine-tuned FLAN-T5 model for answering questions, and NLLB for cross-language translation.
 🧠 Features
-Automatic language detection (Russian/English)
-Translation between languages using facebook/nllb-200-distilled-600M
-Uses a fine-tuned FLAN-T5 model (google/flan-t5-base) for question answering
-Clean response formatting with natural-sounding intros
-Ready to integrate into voice assistants or chatbots
+- Automatic language detection (Russian/English)
+- Translation between languages using facebook/nllb-200-distilled-600M
+- Uses a fine-tuned FLAN-T5 model (google/flan-t5-base) for question answering
+- Clean response formatting with natural-sounding intros
+- Ready to integrate into voice assistants or chatbots
 
 🧰 Requirements
 Make sure you have the following installed:
@@ -271,11 +272,11 @@ You can also ask questions in Russian:
 🔁 Translation Pipeline
 The flow looks like this:
 
-Input : Russian or English question
-Language Detection : Detects input language
-Translate to English (if needed)
-Generate Answer using FLAN-T5
-Translate Back to Russian (if needed)
+1. Input : Russian or English question
+2. Language Detection : Detects input language
+3. Translate to English (if needed)
+4. Generate Answer using FLAN-T5
+5. Translate Back to Russian (if needed)
 
 🧠 Sample Output
 "Вставить картинку вопрос-ответ"
@@ -283,17 +284,17 @@ Translate Back to Russian (if needed)
 # 🤖 Telegram QA & Text Generation Bot
 This is a Telegram bot that provides two core functions using AI:
 
-Text generation — the initial phrases (in English or in English) continue.
-Question answering — answers text and voice questions (in either language).
+- Text generation — the initial phrases (in English or in English) continue.
+- Question answering — answers text and voice questions (in either language).
 The bot uses fine-tuned models for both tasks and supports automatic language detection.
 
 🔧 Features
-✅ Multilingual support: English (en) / Russian (ru)
-✅ /generate — Generate text continuation from any prompt
-✅ /ask — Ask a question via text or voice message
-✅ Voice input recognition using Whisper
-✅ Language detection + translation under the hood
-✅ Ready to deploy with your own Hugging Face models
+- ✅ Multilingual support: English (en) / Russian (ru)
+- ✅ /generate — Generate text continuation from any prompt
+- ✅ /ask — Ask a question via text or voice message
+- ✅ Voice input recognition using Whisper
+- ✅ Language detection + translation under the hood
+- ✅ Ready to deploy with your own Hugging Face models
 
 🧰 Requirements
 Install dependencies:
@@ -303,17 +304,17 @@ pip install python-telegram-bot pydub numpy torch transformers datasets nltk
 Also install ffmpeg for voice processing
 
 🌍 Supported Commands
-/start – Welcome message
-/help – Show help
-/generate – Start text generation mode
-/ask – Ask a question (text or voice)
+- /start – Welcome message
+- /help – Show help
+- /generate – Start text generation mode
+- /ask – Ask a question (text or voice)
 
 🗣️ Voice Message Flow
-User sends voice message
-Bot converts audio to text using Whisper
-Detects language automatically
-Uses QA model to generate answer
-Sends back response in original language
+1. User sends voice message
+2. Bot converts audio to text using Whisper
+3. Detects language automatically
+4. Uses QA model to generate answer
+5. Sends back response in original language
 
 💬 Example Prompts
 /generate
