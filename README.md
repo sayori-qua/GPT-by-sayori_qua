@@ -41,6 +41,7 @@ prompts_continues = [
 4. Saves the best checkpoint locally.
 
 **🧠 Text Generation**
+
 After training, the model generates text continuations using advanced decoding strategies like beam search, top-k sampling, and repetition penalty.
 
 **Example output:**
