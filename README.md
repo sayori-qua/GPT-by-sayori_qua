@@ -415,34 +415,34 @@ Also install ffmpeg for voice processing
 **English:**
 - **/generate**
 <center>
-  <a href="https://postimg.cc/v1N62pY1"  target="_blank">
-    <img src="https://i.postimg.cc/Ssy7RhHG/photo-1-2025-06-03-20-26-47.jpg"  width="400" alt="Screenshot of /generate command" />
+  <a href="https://postimg.cc/xXNNKHH1"  target="_blank">
+    <img src="https://i.postimg.cc/T3CjvJ3g/IMG-8487.jpg"  width="400" alt="Screenshot of /generate command" />
   </a>
   <br />
-  <a href="https://postimg.cc/v1N62pY1"  target="_blank">
-    <img src="https://i.postimg.cc/PrFqqp6q/photo-2-2025-06-03-20-26-47.jpg"  width="400" alt="Screenshot of /ask command" />
+  <a href="https://postimg.cc/qzPvHFhp"  target="_blank">
+    <img src="https://i.postimg.cc/0yQMDR9K/IMG-8488.jpg"  width="400" alt="Screenshot of /ask command" />
   </a>
 </center>
 
 - **/ask**
-<a href="https://postimg.cc/v1N62pY1"  target="_blank">
-  <img src="https://i.postimg.cc/7hk7PBN0/IMG-8482.jpg"  width="400" alt="Screenshot of /ask command" />
+<a href="https://postimg.cc/rKxLxwsL"  target="_blank">
+  <img src="https://i.postimg.cc/sD0DFBR1/IMG-8482.jpg"  width="400" alt="Screenshot of /ask command" />
 </a>
 
 **Russian:**
 - **/generate**
 <center>
-  <a href="https://postimg.cc/v1N62pY1"  target="_blank">
-    <img src="https://i.postimg.cc/6qm0L5JT/IMG-8486.jpg"  width="400" alt="Screenshot of /generate command" />
+  <a href="https://postimg.cc/CzHktwtG"  target="_blank">
+    <img src="https://i.postimg.cc/TYB0KwJ4/IMG-8485.jpg"  width="400" alt="Screenshot of /generate command" />
   </a>
   <br />
-  <a href="https://postimg.cc/v1N62pY1"  target="_blank">
-    <img src="https://i.postimg.cc/TYB0KwJ4/IMG-8485.jpg"  width="400" alt="Screenshot of /ask command" />
+  <a href="https://postimg.cc/QKc1jDMr"  target="_blank">
+    <img src="https://i.postimg.cc/6qm0L5JT/IMG-8486.jpg"  width="400" alt="Screenshot of /ask command" />
   </a>
 </center>
 
 - **/ask**
-<a href="https://postimg.cc/hX2xDpKh"  target="_blank">
+<a href="https://postimg.cc/v1N62pY1"  target="_blank">
   <img src="https://i.postimg.cc/7LkNNWc1/IMG-8484.jpg"  width="400" alt="Screenshot of /ask command" />
 </a>
 
