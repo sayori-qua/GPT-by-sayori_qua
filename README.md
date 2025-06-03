@@ -35,10 +35,10 @@ prompts_continues = [
 ]
 ```
 Training Process
-Tokenizes and pre-processes data (HTML cleaning, URL removal, stopwords filtering).
-Splits data into train/test sets.
-Trains the model using Hugging Face's Trainer.
-Saves the best checkpoint locally.
+1. Tokenizes and pre-processes data (HTML cleaning, URL removal, stopwords filtering).
+2. Splits data into train/test sets.
+3. Trains the model using Hugging Face's Trainer.
+4. Saves the best checkpoint locally.
 
 🧠 Text Generation
 After training, the model generates text continuations using advanced decoding strategies like beam search, top-k sampling, and repetition penalty.
@@ -73,12 +73,11 @@ prompts_continues = [
 ```
 Training Process
 The pipeline includes:
-
-Loading and preprocessing Russian texts (HTML cleaning, URL removal, punctuation handling).
-Splitting data into train/test sets.
-Tokenizing using the Russian GPT tokenizer.
-Training the model using Hugging Face's Trainer.
-Saving the best checkpoint locally.
+1. Loading and preprocessing Russian texts (HTML cleaning, URL removal, punctuation handling).
+2. Splitting data into train/test sets.
+3. Tokenizing using the Russian GPT tokenizer.
+4. Training the model using Hugging Face's Trainer.
+5. Saving the best checkpoint locally.
 
 🧠 Text Generation
 After training, the model generates continuations using advanced decoding strategies such as beam search, top-k sampling, and repetition penalty.
@@ -103,10 +102,10 @@ nltk.download('wordnet')
 🗂️ Dataset Used
 OpenAssistant/oasst1 — A multilingual dataset of human-AI conversations.
 Only high-quality English question-answer pairs are selected based on metadata labels such as:
-Helpfulness
-Toxicity
-Quality
-Creativity
+- Helpfulness
+- Toxicity
+- Quality
+- Creativity
 
 🧪 Example Prompts
 Some example prompts used for testing:
