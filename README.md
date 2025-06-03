@@ -53,11 +53,9 @@ After training, the model generates text continuations using advanced decoding s
 
 **🧠 Sample Output**
 
-```bash
-<span style="color: black;">
+```none
 Prompt: Gym is very good because
 Generated text: Gym is very good because it allows you to take your time and get things done in a short amount of time so you don t have to worry about how long it takes you.
-</span>
 ``` 
 # Russian Text Generation with Fine-Tuned GPT Model ([GPT-by-sayori_qua/generate-ru.py](https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/generate-ru.py))
 
