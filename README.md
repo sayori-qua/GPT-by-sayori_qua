@@ -2,7 +2,7 @@
   <h3>Written by @sayori_qua</h3>
 </div>
 
-# English Text Generation with Fine-Tuned GPT-2 (GPT-by-sayori_qua/generate-en.py)
+# English Text Generation with Fine-Tuned GPT-2 ([GPT-by-sayori_qua/generate-en.py](https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/generate-en.py))
 
 This project demonstrates how to fine-tune a GPT-2 model for English text generation using datasets such as **OpenWebText and BookCorpus**. The model is trained to continue prompts in a natural and coherent way.
 
