@@ -423,3 +423,8 @@ Also install ffmpeg for voice processing
     <img src="https://i.postimg.cc/PrFqqp6q/photo-2-2025-06-03-20-26-47.jpg"  width="400" alt="Screenshot of /ask command" />
   </a>
 </center>
+
+- **/ask**
+- <a href="https://postimg.cc/v1N62pY1"  target="_blank">
+    <img src="https://https://i.postimg.cc/7hk7PBN0/IMG-8482.jpg"  width="400" alt="Screenshot of /ask command" />
+  </a>
