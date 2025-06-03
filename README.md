@@ -318,7 +318,7 @@ Also install ffmpeg for audio file handling
 - Input : English (en) or Russian (ru)
 - QA Engine : Works on English questions
 - Translation : English ↔ Russian
-- 
+
 **🧪 Example Prompts**
   
 Here are some example prompts used in testing:
