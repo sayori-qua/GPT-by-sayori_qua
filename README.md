@@ -26,7 +26,9 @@ nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 ```
+
 **🧪 Prompts for Testing**
+
 ```bash
 prompts_continues = [
     'I can', 
@@ -38,6 +40,7 @@ prompts_continues = [
 ]
 ```
 **Training Process:**
+
 1. Tokenizes and pre-processes data (HTML cleaning, URL removal, stopwords filtering).
 2. Splits data into train/test sets.
 3. Trains the model using Hugging Face's Trainer.
@@ -52,19 +55,22 @@ After training, the model generates text continuations using advanced decoding s
 
 
 # Russian Text Generation with Fine-Tuned GPT Model
+
 This project demonstrates how to fine-tune a Russian GPT model (IlyaGusev/rugpt3medium_sum_gazeta) on the RUwiki dataset for Russian text generation. After training, the model is capable of continuing prompts in natural and coherent Russian.
 
-🧰 Requirements
+**🧰 Requirements**
+
 ```bash
 pip install torch transformers datasets nltk bs4 langdetect rouge sacrebleu pandas tqdm joblib tensorboard 
 ```
 Also, download required NLTK resources:
+
 ```bash
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 ```
-🧪 Prompts for Testing
+**🧪 Prompts for Testing**
 ```bash
 Some example prompts used for testing the model:
 prompts_continues = [
@@ -75,7 +81,7 @@ prompts_continues = [
     ...
 ]
 ```
-Training Process
+**Training Process:**
 The pipeline includes:
 1. Loading and preprocessing Russian texts (HTML cleaning, URL removal, punctuation handling).
 2. Splitting data into train/test sets.
@@ -83,16 +89,16 @@ The pipeline includes:
 4. Training the model using Hugging Face's Trainer.
 5. Saving the best checkpoint locally.
 
-🧠 Text Generation
+**🧠 Text Generation**
 After training, the model generates continuations using advanced decoding strategies such as beam search, top-k sampling, and repetition penalty.
 
-Example output:
+**Example output:**
 """Вставить картинку"""
 
 English QA Model Training with FLAN-T5
 This project demonstrates how to fine-tune a question answering model using the google/flan-t5-base model on the OpenAssistant/oasst1 dataset. The model is trained to answer user questions in a natural and helpful way.
 
-🧰 Requirements
+**🧰 Requirements**
 Make sure you have all required libraries installed:
 ```bash
 pip install torch transformers datasets nltk bs4 langdetect rouge sacrebleu pandas tqdm joblib tensorboard 
@@ -103,7 +109,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 ```
-🗂️ Dataset Used
+**🗂️ Dataset Used**
 OpenAssistant/oasst1 — A multilingual dataset of human-AI conversations.
 Only high-quality English question-answer pairs are selected based on metadata labels such as:
 - Helpfulness
@@ -111,7 +117,7 @@ Only high-quality English question-answer pairs are selected based on metadata l
 - Quality
 - Creativity
 
-🧪 Example Prompts
+**🧪 Example Prompts**
 Some example prompts used for testing:
 ```bash
 prompts_qa_en = [
@@ -124,7 +130,8 @@ prompts_qa_en = [
 ```
 You can easily extend or modify these prompts.
 
-Training Pipeline
+**Training Pipeline**
+
 The pipeline includes:
 
 1. Loading and filtering the dataset.
@@ -134,17 +141,17 @@ The pipeline includes:
 5. Training the T5 model using Hugging Face's Trainer.
 6. Saving the best checkpoint locally.
 
-🧠 Text Generation
+**🧠 Text Generation**
 After training, the model generates answers using decoding strategies like:
 
 - Beam search
 - Top-p and Top-k sampling
 - Repetition penalty
 
-Example output:
+**Example output:**
 """Вставить картинку"""
 
-Multilingual QA System with Translation
+# Multilingual QA System with Translation
 This project demonstrates how to build a multilingual question answering system , where a Russian question is translated into English, answered by an English QA model (google/flan-t5-base), and the answer is translated back into Russian.
 
 The full pipeline includes:
