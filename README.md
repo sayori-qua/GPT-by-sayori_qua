@@ -3,9 +3,11 @@
 </div>
 
 # English Text Generation with Fine-Tuned GPT-2
+
 This project demonstrates how to fine-tune a GPT-2 model for English text generation using datasets such as OpenWebText and BookCorpus. The model is trained to continue prompts in a natural and coherent way.
 
 **📝 Overview**
+
 The main goal of this project is to:
 
 Load and preprocess large-scale datasets (OpenWebText and BookCorpus).
@@ -13,6 +15,7 @@ Fine-tune a GPT-2 model for causal language modeling.
 Generate high-quality English text continuations based on input prompts.
 
 **🧰 Requirements**
+
 Make sure you have the following installed:
 ```bash
 pip install torch transformers datasets nltk bs4 langdetect rouge sacrebleu pandas tqdm joblib tensorboard
