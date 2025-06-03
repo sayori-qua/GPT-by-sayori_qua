@@ -1,4 +1,5 @@
-# GPT-by-sayori_qua
+📝 **Written by** [@sayori_qua](https://github.com/sayori_qua)   
+📧 Feel free to contact me for suggestions or collaboration!
 
 # English Text Generation with Fine-Tuned GPT-2
 This project demonstrates how to fine-tune a GPT-2 model for English text generation using datasets such as OpenWebText and BookCorpus. The model is trained to continue prompts in a natural and coherent way.
