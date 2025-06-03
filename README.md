@@ -39,6 +39,7 @@ prompts_continues = [
     ...
 ]
 ```
+
 **Training Process:**
 
 1. Tokenizes and pre-processes data (HTML cleaning, URL removal, stopwords filtering).
@@ -83,6 +84,7 @@ prompts_continues = [
     ...
 ]
 ```
+
 **Training Process:**
 
 The pipeline includes:
@@ -93,15 +95,19 @@ The pipeline includes:
 5. Saving the best checkpoint locally.
 
 **🧠 Text Generation**
+
 After training, the model generates continuations using advanced decoding strategies such as **beam search, top-k sampling, and repetition penalty.**
 
 **Example output:**
+
 """Вставить картинку"""
 
-# English QA Model Training with FLAN-T5
+# English Question Answering Model Training with FLAN-T5
+
 This project demonstrates how to fine-tune a question answering model using the **google/flan-t5-base model** on the **OpenAssistant/oasst1 dataset**. The model is trained to answer user questions in a natural and helpful way.
 
 **🧰 Requirements**
+
 Make sure you have all required libraries installed:
 ```bash
 pip install torch transformers datasets nltk bs4 langdetect rouge sacrebleu pandas tqdm joblib tensorboard 
@@ -112,7 +118,9 @@ nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 ```
+
 **🗂️ Dataset Used**
+
 OpenAssistant/oasst1 — A multilingual dataset of human-AI conversations.
 Only high-quality English question-answer pairs are selected based on metadata labels such as:
 - Helpfulness
@@ -121,6 +129,7 @@ Only high-quality English question-answer pairs are selected based on metadata l
 - Creativity
 
 **🧪 Example Prompts**
+
 Some example prompts used for testing:
 ```bash
 prompts_qa_en = [
@@ -145,6 +154,7 @@ The pipeline includes:
 6. Saving the best checkpoint locally.
 
 **🧠 Text Generation**
+
 After training, the model generates answers using decoding strategies like:
 
 - Beam search
@@ -152,19 +162,22 @@ After training, the model generates answers using decoding strategies like:
 - Repetition penalty
 
 **Example output:**
+
 """Вставить картинку"""
 
 
 # Russian Question Answering System with Translation
+
 This project demonstrates how to build a multilingual question answering system , **where a Russian question is translated into English**, answered by an English QA model **google/flan-t5-base**, and the answer **is translated back into Russian**.
 
-The full pipeline includes:
+**The full pipeline includes:**
 
 1. Language detection
 2. Text translation using facebook/nllb-200-distilled-600M
 3. QA generation using a fine-tuned FLAN-T5 model
 
-🧰 Requirements
+**🧰 Requirements**
+
 Make sure you have the following libraries installed:
 ```bash
 pip install torch transformers datasets nltk langdetect
@@ -175,14 +188,17 @@ nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 ```
-🌍 Supported Languages
+
+**🌍 Supported Languages**
+
 ranslation is powered by NLLB-200 tokenizer. You can see all supported languages via:
 ```bash
 translator_tokenizer.lang_code_to_id.keys()
 ```
 Example: 'rus_Cyrl', 'eng_Latn', 'deu_Latn', 'fra_Latn', etc.
 
-🧪 Example Prompts
+**🧪 Example Prompts**
+
 Some example prompts used for testing:
 ```bash
 prompts_qa_ru = [
@@ -194,7 +210,8 @@ prompts_qa_ru = [
 ]
 ```
 
-🔁 Translation Pipeline
+**🔁 Translation Pipeline**
+
 The flow looks like this:
 
 1. Input : Russian question.
@@ -203,17 +220,20 @@ The flow looks like this:
 4. Generate Answer : Using fine-tuned English QA model.
 5. Translate Back to Russian : Final response in native language.
 
-🧠 Sample Output
+**🧠 Sample Output**
+
 "Вставить картинку вопрос-ответ"
 
 # Multilingual Text Generation with Fine-Tuned GPT Models
+
 This project demonstrates how to use two fine-tuned GPT models for language-specific text generation :
 
 - English model trained on OpenWebText and BookCorpus.
 - Russian model trained on RUwiki.
 The system automatically detects the input language and uses the appropriate model to generate natural-sounding continuations.
 
-🧰 Requirements
+**🧰 Requirements**
+
 Make sure you have the following libraries installed:
 ```bash
 pip install torch transformers langdetect
@@ -221,40 +241,46 @@ pip install torch transformers langdetect
 
 No additional NLTK or spaCy dependencies are required for this module.
 
-🔍 Language Detection
+**🔍 Language Detection**
+
 The system uses langdetect + custom keyword rules to determine the input language.
 
-Supported languages:
+**🌍 Supported languages:**
 
 - Russian (ru)
 - English (en)
 Custom keywords ensure better accuracy in cases where language detection fails.
 
-🧠 Text Generation
+**🧠 Text Generation**
+
 Each model is used to continue the user's prompt in its native language:
 
 **English Model**
+
 Model: fine-tuned "openai-community/gpt2"
 Postprocessing: Fixes common contractions and capitalization.
 Example output:
 """Вставить картинку"""
 
 **Russian Model**
+
 Model: IlyaGusev/rugpt3medium_sum_gazeta
 Postprocessing: Ensures proper capitalization and punctuation.
 Example output:
 """Вставить картинку"""
 
 # Multilingual Question Answering System
+
 This project implements a multilingual question answering system that supports both English and Russian . It uses a fine-tuned **FLAN-T5** model for answering questions, and **NLLB** for cross-language translation.
-🧠 Features
+
+**🧠 Features**
 - Automatic language detection (Russian/English)
 - Translation between languages using facebook/nllb-200-distilled-600M
 - Uses a fine-tuned FLAN-T5 model (google/flan-t5-base) for question answering
 - Clean response formatting with natural-sounding intros
 - Ready to integrate into voice assistants or chatbots
 
-🧰 Requirements
+**🧰 Requirements**
 Make sure you have the following installed:
 ```bash
 pip install torch transformers datasets langdetect
@@ -264,11 +290,11 @@ Optional (for audio processing):
 pip install pydub numpy scipy
 ```
 Also install ffmpeg for audio file handling:
-🌍 Supported Languages
+**🌍 Supported Languages:**
 Input : English (en) or Russian (ru)
 QA Engine : Works on English questions
 Translation : English ↔ Russian
-🧪 Example Prompts
+**🧪 Example Prompts**
 Here are some example prompts used in testing:
 ```bash
 prompts_qa_en = [
@@ -284,7 +310,7 @@ You can also ask questions in Russian:
 "Почему всё стало таким скучным?"
 "Кто такой Достоевский?"
 ```
-🔁 Translation Pipeline
+**🔁 Translation Pipeline**
 The flow looks like this:
 
 1. Input : Russian or English question
@@ -293,7 +319,7 @@ The flow looks like this:
 4. Generate Answer using FLAN-T5
 5. Translate Back to Russian (if needed)
 
-🧠 Sample Output
+**🧠 Sample Output**
 "Вставить картинку вопрос-ответ"
 
 # 🤖 Telegram QA & Text Generation Bot
@@ -303,7 +329,7 @@ This is a Telegram bot that provides two core functions using AI:
 - Question answering — answers text and voice questions (in either language).
 The bot uses fine-tuned models for both tasks and supports automatic language detection.
 
-🔧 Features
+**🔧 Features**
 - ✅ Multilingual support: English (en) / Russian (ru)
 - ✅ /generate — Generate text continuation from any prompt
 - ✅ /ask — Ask a question via text or voice message
@@ -311,27 +337,27 @@ The bot uses fine-tuned models for both tasks and supports automatic language de
 - ✅ Language detection + translation under the hood
 - ✅ Ready to deploy with your own Hugging Face models
 
-🧰 Requirements
+**🧰 Requirements**
 Install dependencies:
 ```bash
 pip install python-telegram-bot pydub numpy torch transformers datasets nltk
 ```
 Also install ffmpeg for voice processing
 
-🌍 Supported Commands
+**🌍 Supported Commands:**
 - /start – Welcome message
 - /help – Show help
 - /generate – Start text generation mode
 - /ask – Ask a question (text or voice)
 
-🗣️ Voice Message Flow
+**🗣️ Voice Message Flow**
 1. User sends voice message
 2. Bot converts audio to text using Whisper
 3. Detects language automatically
 4. Uses QA model to generate answer
 5. Sends back response in original language
 
-💬 Example Prompts
+**💬 Example Prompts**
 /generate
 
 /ask
