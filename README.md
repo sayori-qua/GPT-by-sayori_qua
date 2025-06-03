@@ -51,7 +51,7 @@ prompts_continues = [
 
 After training, the model generates text continuations using advanced decoding strategies like **beam search, top-k sampling, and repetition penalty.**
 
-**Example output:**
+**🧠 Sample Output**
 """Вставить картинку"""
 
 
@@ -85,7 +85,7 @@ prompts_continues = [
 ]
 ```
 
-**Training Process:**
+**Training Process**
 
 The pipeline includes:
 1. Loading and preprocessing Russian texts (HTML cleaning, URL removal, punctuation handling).
@@ -98,7 +98,7 @@ The pipeline includes:
 
 After training, the model generates continuations using advanced decoding strategies such as **beam search, top-k sampling, and repetition penalty.**
 
-**Example output:**
+**🧠 Sample Output**
 
 """Вставить картинку"""
 
@@ -161,7 +161,7 @@ After training, the model generates answers using decoding strategies like:
 - Top-p and Top-k sampling
 - Repetition penalty
 
-**Example output:**
+**🧠 Sample Output**
 
 """Вставить картинку"""
 
@@ -191,7 +191,7 @@ nltk.download('wordnet')
 
 **🌍 Supported Languages**
 
-ranslation is powered by NLLB-200 tokenizer. You can see all supported languages via:
+translation is powered by NLLB-200 tokenizer. You can see all supported languages via:
 ```bash
 translator_tokenizer.lang_code_to_id.keys()
 ```
@@ -259,7 +259,8 @@ Each model is used to continue the user's prompt in its native language:
 
 Model: fine-tuned "openai-community/gpt2"
 Postprocessing: Fixes common contractions and capitalization.
-Example output:
+
+**🧠 Sample Output**
 """Вставить картинку"""
 
 **Russian Model**
@@ -305,11 +306,13 @@ prompts_qa_en = [
     ...
 ]
 ```
-You can also ask questions in Russian:
+**You can also ask questions in Russian:**
+
 ```bash
 "Почему всё стало таким скучным?"
 "Кто такой Достоевский?"
 ```
+
 **🔁 Translation Pipeline**
 The flow looks like this:
 
