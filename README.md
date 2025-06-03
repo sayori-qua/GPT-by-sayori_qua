@@ -413,6 +413,7 @@ Also install ffmpeg for voice processing
 **🎯How does this work?**
 
 **English:**
+
 - **/generate**
 <center>
   <a href="https://postimg.cc/xXNNKHH1"  target="_blank">
@@ -424,12 +425,15 @@ Also install ffmpeg for voice processing
   </a>
 </center>
 
+
 - **/ask**
 <a href="https://postimg.cc/rKxLxwsL"  target="_blank">
   <img src="https://i.postimg.cc/sD0DFBR1/IMG-8482.jpg"  width="400" alt="Screenshot of /ask command" />
 </a>
 
+
 **Russian:**
+
 - **/generate**
 <center>
   <a href="https://postimg.cc/CzHktwtG"  target="_blank">
@@ -440,6 +444,7 @@ Also install ffmpeg for voice processing
     <img src="https://i.postimg.cc/6qm0L5JT/IMG-8486.jpg"  width="400" alt="Screenshot of /ask command" />
   </a>
 </center>
+
 
 - **/ask**
 <a href="https://postimg.cc/v1N62pY1"  target="_blank">
