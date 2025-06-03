@@ -1,5 +1,5 @@
 <div align="center">
-  **Written by** @sayori_qua
+  <h3>Written by** @sayori_qua</h3>
 </div>
 
 # English Text Generation with Fine-Tuned GPT-2
