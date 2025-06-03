@@ -413,7 +413,10 @@ Also install ffmpeg for voice processing
 **🎯How does this work?**
 
 **English:**
-- /generate
+- **/generate**
 <a href="https://postimg.cc/v1N62pY1"  target="_blank">
   <img src="https://i.postimg.cc/Ssy7RhHG/photo-1-2025-06-03-20-26-47.jpg"  width="400" alt="Screenshot of /generate command" />
+</a>
+<a href="https://postimg.cc/v1N62pY1"  target="_blank">
+  <img src="https://i.postimg.cc/PrFqqp6q/photo-2-2025-06-03-20-26-47.jpg"  width="400" alt="Screenshot of /generate command" />
 </a>
