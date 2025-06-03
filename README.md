@@ -272,7 +272,7 @@ Each model is used to continue the user's prompt in its native language:
 Model: fine-tuned "openai-community/gpt2"
 Postprocessing: Fixes common contractions and capitalization.
 
-**🧠 Sample Output**
+**🧠 Sample Output (en)**
 
 ```none
 Prompt: Gym is very good because
@@ -284,7 +284,7 @@ Generated text: Gym is very good because it allows you to take your time and get
 Model: IlyaGusev/rugpt3medium_sum_gazeta
 Postprocessing: Ensures proper capitalization and punctuation.'
 
-**🧠 Sample Output**
+**🧠 Sample Output (ru)**
 
 ```bash
 Prompt: Она встала у окна, глядя на проходящих людей, машины, листья, которые ветер
