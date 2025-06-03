@@ -55,7 +55,7 @@ After training, the model generates text continuations using advanced decoding s
 """Вставить картинку"""
 
 
-# Russian Text Generation with Fine-Tuned GPT Model
+# Russian Text Generation with Fine-Tuned GPT Model (https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/generate-ru.py)
 
 This project demonstrates how to fine-tune a Russian GPT model: **IlyaGusev/rugpt3medium_sum_gazeta** on the RUwiki dataset for Russian text generation. After training, the model is capable of continuing prompts in natural and coherent Russian.
 
@@ -102,7 +102,7 @@ After training, the model generates continuations using advanced decoding strate
 
 """Вставить картинку"""
 
-# English Question Answering Model Training with FLAN-T5
+# English Question Answering Model Training with FLAN-T5 (https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/qa-en.py)
 
 This project demonstrates how to fine-tune a question answering model using the **google/flan-t5-base model** on the **OpenAssistant/oasst1 dataset**. The model is trained to answer user questions in a natural and helpful way.
 
