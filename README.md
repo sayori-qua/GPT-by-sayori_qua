@@ -314,10 +314,13 @@ pip install pydub numpy scipy
 Also install ffmpeg for audio file handling
 
 **🌍 Supported Languages:**
-Input : English (en) or Russian (ru)
-QA Engine : Works on English questions
-Translation : English ↔ Russian
+
+- Input : English (en) or Russian (ru)
+- QA Engine : Works on English questions
+- Translation : English ↔ Russian
+- 
 **🧪 Example Prompts**
+  
 Here are some example prompts used in testing:
 ```bash
 prompts_qa_en = [
