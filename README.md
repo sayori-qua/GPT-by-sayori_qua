@@ -20,7 +20,7 @@ Also, download required NLTK resources:
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
-```bash
+```
 🧪 Prompts for Testing
 ```bash
 prompts_continues = [
@@ -31,6 +31,7 @@ prompts_continues = [
     'She stood by the window watching...',
     ...
 ]
+```
 🏋️ Training Process
 Tokenizes and pre-processes data (HTML cleaning, URL removal, stopwords filtering).
 Splits data into train/test sets.
@@ -50,13 +51,13 @@ This project demonstrates how to fine-tune a Russian GPT model (IlyaGusev/rugpt3
 🧰 Requirements
 ```bash
 pip install torch transformers datasets nltk bs4 langdetect rouge sacrebleu pandas tqdm joblib tensorboard accelerate
-
+```
 Also, download required NLTK resources:
-
+```bash
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
-
+```
 🧪 Prompts for Testing
 ```bash
 Some example prompts used for testing the model:
@@ -67,7 +68,7 @@ prompts_continues = [
     'Она встала у окна, глядя на проходящих людей...',
     ...
 ]
-
+```
 🏋️ Training Process
 The pipeline includes:
 
@@ -90,13 +91,13 @@ This project demonstrates how to fine-tune a question answering model using the 
 Make sure you have all required libraries installed:
 ```bash
 pip install torch transformers datasets nltk bs4 langdetect rouge sacrebleu pandas tqdm joblib tensorboard accelerate
-
+```
 Also, download NLTK resources:
 ```bash
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
-
+```
 🗂️ Dataset Used
 OpenAssistant/oasst1 — A multilingual dataset of human-AI conversations.
 Only high-quality English question-answer pairs are selected based on metadata labels such as:
@@ -115,7 +116,7 @@ prompts_qa_en = [
     "Is it true that a human created you?",
     ...
 ]
-```bash
+```
 You can easily extend or modify these prompts.
 
 🏋️ Training Pipeline
@@ -151,7 +152,7 @@ QA generation using a fine-tuned FLAN-T5 model
 Make sure you have the following libraries installed:
 ```bash
 pip install torch transformers datasets nltk langdetect accelerate
-```bash
+```
 Also, download NLTK resources:
 nltk.download('punkt')
 nltk.download('stopwords')
@@ -161,7 +162,7 @@ nltk.download('wordnet')
 ranslation is powered by NLLB-200 tokenizer. You can see all supported languages via:
 ```bash
 translator_tokenizer.lang_code_to_id.keys()
-```bash
+```
 Example: 'rus_Cyrl', 'eng_Latn', 'deu_Latn', 'fra_Latn', etc.
 
 🧪 Example Prompts
@@ -174,7 +175,7 @@ prompts_qa_ru = [
     "Правда ли, что тебя создал человек?",
     ...
 ]
-```bash
+```
 
 🔁 Translation Pipeline
 The flow looks like this:
@@ -199,7 +200,7 @@ The system automatically detects the input language and uses the appropriate mod
 Make sure you have the following libraries installed:
 ```bash
 pip install torch transformers langdetect
-```bash
+```
 
 No additional NLTK or spaCy dependencies are required for this module.
 
