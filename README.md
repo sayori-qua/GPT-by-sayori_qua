@@ -48,7 +48,7 @@ prompts_continues = [
 
 **🧠 Text Generation**
 
-After training, the model generates text continuations using advanced decoding strategies like beam search, top-k sampling, and repetition penalty.
+After training, the model generates text continuations using advanced decoding strategies like **beam search, top-k sampling, and repetition penalty.**
 
 **Example output:**
 """Вставить картинку"""
@@ -93,12 +93,12 @@ The pipeline includes:
 5. Saving the best checkpoint locally.
 
 **🧠 Text Generation**
-After training, the model generates continuations using advanced decoding strategies such as beam search, top-k sampling, and repetition penalty.
+After training, the model generates continuations using advanced decoding strategies such as **beam search, top-k sampling, and repetition penalty.**
 
 **Example output:**
 """Вставить картинку"""
 
-English QA Model Training with FLAN-T5
+# English QA Model Training with FLAN-T5
 This project demonstrates how to fine-tune a question answering model using the **google/flan-t5-base model** on the **OpenAssistant/oasst1 dataset**. The model is trained to answer user questions in a natural and helpful way.
 
 **🧰 Requirements**
@@ -154,37 +154,6 @@ After training, the model generates answers using decoding strategies like:
 **Example output:**
 """Вставить картинку"""
 
-# English Question Answering Model Training with FLAN-T5
-
-This project demonstrates how to fine-tune the **google/flan-t5-base** model for a question answering task , using high-quality question-answer pairs from the **OpenAssistant/oasst1** dataset.
-
-The model is trained to answer user questions in a natural and helpful way, with support for filtering by quality metrics like **helpfulness , toxicity , creativity , and quality**.
-📌 Summary
-- ✅ Fine-tunes FLAN-T5 for QA
-- 🧠 Uses filtered QA pairs from OpenAssistant
-- 🎯 Filters by quality: helpfulness > 0.7, toxicity < 0.2, creativity > 0.45, quality > 0.7
-- 📦 Includes generation pipeline
-- 💬 Ready-to-use QA bot with customizable prompts
-
-🧰 Requirements
-Make sure you have the following installed:
-```bash
-pip install torch transformers datasets nltk pandas joblib sklearn bs4 langdetect sacrebleu rouge tqdm 
-```
-Also download NLTK resources:
-```bash
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
-```
-🗂️ Dataset Used
-OpenAssistant/oasst1 : A multilingual dataset of human-AI conversations.
-Only high-quality English QA pairs are selected based on metadata:
-- Helpfulness > 0.7
-- Toxicity < 0.2
-- Quality > 0.7
-- Creativity > 0.45
-Custom examples are also added to improve performance on common questions.
 
 # Russian Question Answering System with Translation
 This project demonstrates how to build a multilingual question answering system , **where a Russian question is translated into English**, answered by an English QA model **google/flan-t5-base**, and the answer **is translated back into Russian**.
