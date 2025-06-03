@@ -4,7 +4,7 @@
 
 # English Text Generation with Fine-Tuned GPT-2
 
-This project demonstrates how to fine-tune a GPT-2 model for English text generation using datasets such as OpenWebText and BookCorpus. The model is trained to continue prompts in a natural and coherent way.
+This project demonstrates how to fine-tune a GPT-2 model for English text generation using datasets such as **OpenWebText and BookCorpus**. The model is trained to continue prompts in a natural and coherent way.
 
 **📝 Overview**
 
@@ -56,7 +56,7 @@ After training, the model generates text continuations using advanced decoding s
 
 # Russian Text Generation with Fine-Tuned GPT Model
 
-This project demonstrates how to fine-tune a Russian GPT model (IlyaGusev/rugpt3medium_sum_gazeta) on the RUwiki dataset for Russian text generation. After training, the model is capable of continuing prompts in natural and coherent Russian.
+This project demonstrates how to fine-tune a Russian GPT model: **IlyaGusev/rugpt3medium_sum_gazeta** on the RUwiki dataset for Russian text generation. After training, the model is capable of continuing prompts in natural and coherent Russian.
 
 **🧰 Requirements**
 
@@ -70,7 +70,9 @@ nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 ```
+
 **🧪 Prompts for Testing**
+
 ```bash
 Some example prompts used for testing the model:
 prompts_continues = [
@@ -82,6 +84,7 @@ prompts_continues = [
 ]
 ```
 **Training Process:**
+
 The pipeline includes:
 1. Loading and preprocessing Russian texts (HTML cleaning, URL removal, punctuation handling).
 2. Splitting data into train/test sets.
@@ -96,7 +99,7 @@ After training, the model generates continuations using advanced decoding strate
 """Вставить картинку"""
 
 English QA Model Training with FLAN-T5
-This project demonstrates how to fine-tune a question answering model using the google/flan-t5-base model on the OpenAssistant/oasst1 dataset. The model is trained to answer user questions in a natural and helpful way.
+This project demonstrates how to fine-tune a question answering model using the **google/flan-t5-base model** on the **OpenAssistant/oasst1 dataset**. The model is trained to answer user questions in a natural and helpful way.
 
 **🧰 Requirements**
 Make sure you have all required libraries installed:
@@ -153,9 +156,9 @@ After training, the model generates answers using decoding strategies like:
 
 # English Question Answering Model Training with FLAN-T5
 
-This project demonstrates how to fine-tune the google/flan-t5-base model for a question answering task , using high-quality question-answer pairs from the OpenAssistant/oasst1 dataset.
+This project demonstrates how to fine-tune the **google/flan-t5-base** model for a question answering task , using high-quality question-answer pairs from the **OpenAssistant/oasst1** dataset.
 
-The model is trained to answer user questions in a natural and helpful way, with support for filtering by quality metrics like helpfulness , toxicity , creativity , and quality .
+The model is trained to answer user questions in a natural and helpful way, with support for filtering by quality metrics like **helpfulness , toxicity , creativity , and quality**.
 📌 Summary
 - ✅ Fine-tunes FLAN-T5 for QA
 - 🧠 Uses filtered QA pairs from OpenAssistant
@@ -184,7 +187,7 @@ Only high-quality English QA pairs are selected based on metadata:
 Custom examples are also added to improve performance on common questions.
 
 # Russian Question Answering System with Translation
-This project demonstrates how to build a multilingual question answering system , where a Russian question is translated into English, answered by an English QA model (google/flan-t5-base), and the answer is translated back into Russian.
+This project demonstrates how to build a multilingual question answering system , **where a Russian question is translated into English**, answered by an English QA model **google/flan-t5-base**, and the answer **is translated back into Russian**.
 
 The full pipeline includes:
 
@@ -261,20 +264,20 @@ Custom keywords ensure better accuracy in cases where language detection fails.
 🧠 Text Generation
 Each model is used to continue the user's prompt in its native language:
 
-English Model
+**English Model**
 Model: fine-tuned "openai-community/gpt2"
 Postprocessing: Fixes common contractions and capitalization.
 Example output:
 """Вставить картинку"""
 
-Russian Model
+**Russian Model**
 Model: IlyaGusev/rugpt3medium_sum_gazeta
 Postprocessing: Ensures proper capitalization and punctuation.
 Example output:
 """Вставить картинку"""
 
 # Multilingual Question Answering System
-This project implements a multilingual question answering system that supports both English and Russian . It uses a fine-tuned FLAN-T5 model for answering questions, and NLLB for cross-language translation.
+This project implements a multilingual question answering system that supports both English and Russian . It uses a fine-tuned **FLAN-T5** model for answering questions, and **NLLB** for cross-language translation.
 🧠 Features
 - Automatic language detection (Russian/English)
 - Translation between languages using facebook/nllb-200-distilled-600M
