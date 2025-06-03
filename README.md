@@ -165,9 +165,13 @@ After training, the model generates answers using decoding strategies like:
 - Repetition penalty
 
 **🧠 Sample Output**
-
-"""Вставить картинку"""
-
+```bash
+Qyestion: Can you really trust your memory?
+Answer: Actually... Sure, you can trust your memory. Here are some things to consider when evaluating a memory:
+1. The memory is based on information about the person or event that they were thinking about.
+2. The memories can vary from person to person depending on the context and context of the event.
+3. There are many different types of memories that can be compared to each other.
+```
 
 # Russian Question Answering System with Translation ([GPT-by-sayori_qua/qa-ru.py](https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/qa-ru.py))
 
@@ -224,9 +228,13 @@ The flow looks like this:
 5. Translate Back to Russian : Final response in native language.
 
 **🧠 Sample Output**
-
-"Вставить картинку вопрос-ответ"
-
+```bash
+Question: Почему всё стало таким скучным в последнее время?
+Answer: В последнее время это скучно по многим причинам:
+1. было много работы и нужно было слишком много времени, чтобы сделать все.
+2. Мне трудно сосредоточиться на задаче, поэтому я чувствую, что не получаю достаточно времени в течение дня.
+3. Погода так холодная, что может быть трудно идти в ногу с требованиями работы.
+```
 # Multilingual Text Generation with Fine-Tuned GPT Models ([GPT-by-sayori_qua/generate_text_en_ru.py](https://github.com/sayori-qua/GPT-by-sayori_qua/blob/main/generate_text_en_ru.py))
 
 This project demonstrates how to use two fine-tuned GPT models for language-specific text generation :
