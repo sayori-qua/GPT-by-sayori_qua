@@ -414,4 +414,6 @@ Also install ffmpeg for voice processing
 
 **English:**
 - /generate
-<img src=[![photo-1-2025-06-03-20-26-47.jpg](https://i.postimg.cc/Ssy7RhHG/photo-1-2025-06-03-20-26-47.jpg)](https://postimg.cc/v1N62pY1) width="400" alt="Screenshot of /generate command" />
+<a href="https://postimg.cc/v1N62pY1"  target="_blank">
+  <img src="https://i.postimg.cc/Ssy7RhHG/photo-1-2025-06-03-20-26-47.jpg"  width="400" alt="Screenshot of /generate command" />
+</a>
