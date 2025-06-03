@@ -263,7 +263,7 @@ The system uses langdetect + custom keyword rules to determine the input languag
 - English (en)
 Custom keywords ensure better accuracy in cases where language detection fails.
 
-**🧠 Text Generation**
+**📖 Text Generation**
 
 Each model is used to continue the user's prompt in its native language:
 
@@ -335,7 +335,7 @@ prompts_qa_en = [
 
 ```bash
 "Почему всё стало таким скучным?"
-"Кто такой Достоевский?"
+"Программирование полезно для мозга?"
 ```
 
 **🔁 Translation Pipeline**
@@ -351,7 +351,7 @@ The flow looks like this:
 
 Model: **google/flan-t5-base model**
 
-**🧠 Sample Output**
+**🧠 Sample Output (en)**
 
 ```none
 Qyestion: Can you really trust your memory?
@@ -365,7 +365,7 @@ Answer: Actually... Sure, you can trust your memory. Here are some things to con
 
 Model: **google/flan-t5-base** with translator **facebook/nllb-200-distilled-600M**.
 
-**🧠 Sample Output**
+**🧠 Sample Output (ru)**
 
 ```none
 Question: Почему всё стало таким скучным в последнее время?
