@@ -76,7 +76,7 @@ nltk.download('wordnet')
 
 **🧪 Prompts for Testing**
 
-```bash
+```none
 Some example prompts used for testing the model:
 prompts_continues = [
     'Я люблю гулять по вечерам',
