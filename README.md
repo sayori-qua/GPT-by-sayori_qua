@@ -270,6 +270,7 @@ Each model is used to continue the user's prompt in its native language:
 **English Model**
 
 Model: fine-tuned "openai-community/gpt2"
+
 Postprocessing: Fixes common contractions and capitalization.
 
 **🧠 Sample Output (en)**
@@ -281,7 +282,8 @@ Generated text: Gym is very good because it allows you to take your time and get
 
 **Russian Model**
 
-Model: IlyaGusev/rugpt3medium_sum_gazeta
+Model: "IlyaGusev/rugpt3medium_sum_gazeta"
+
 Postprocessing: Ensures proper capitalization and punctuation.'
 
 **🧠 Sample Output (ru)**
